@@ -39,7 +39,7 @@ while game_running:
             
 
     # 更新数据
-    if square_rect.x % CELL_SIZE == 0 and square_rect.y % CELL_SIZE == 0: # 刚好在格子内，避免压着线走
+    if square_rect.x % CELL_SIZE == 0 and square_rect.y % CELL_SIZE == 0: # 保证在格子内，避免压着线走
         sqare_direction = sqare_can_turn
     square_rect = square_rect.move(sqare_direction)
 
